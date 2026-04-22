@@ -38,7 +38,7 @@ const Clients = () => {
                 <img
                   src={client.src}
                   alt={client.subtitle}
-                  className="h-14 w-auto max-w-[200px] object-contain"
+                  className="h-16 sm:h-20 w-auto max-w-[220px] sm:max-w-[260px] object-contain"
                   loading="lazy"
                   decoding="async"
                 />
