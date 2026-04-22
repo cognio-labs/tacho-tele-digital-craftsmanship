@@ -20,7 +20,7 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: '#' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/tacho-tele-india-private-limited/' },
   ];
 
   return (
@@ -47,6 +47,8 @@ const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
                 >
                   <social.icon className="w-5 h-5" />

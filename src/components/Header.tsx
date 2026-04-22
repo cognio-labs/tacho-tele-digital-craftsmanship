@@ -58,10 +58,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <Button className="hidden md:flex bg-accent text-accent-foreground hover:bg-gold-dark font-semibold shadow-accent">
-            Get Quote
-          </Button>
+
 
           {/* Mobile Menu Button */}
           <button
@@ -87,9 +84,7 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button className="w-full bg-accent text-accent-foreground hover:bg-gold-dark font-semibold mt-2">
-              Get Quote
-            </Button>
+
           </nav>
         </div>
       )}

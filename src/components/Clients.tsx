@@ -1,10 +1,10 @@
 const clients = [
-  { name: 'NCC', initials: 'NCC' },
-  { name: 'Skipper India Limited', initials: 'SIL' },
-  { name: 'TCS', initials: 'TCS' },
-  { name: 'Dilip Buildcon Limited', initials: 'DBL' },
-  { name: 'Pace Digitek', initials: 'PD' },
-  { name: 'HFCL', initials: 'HF' },
+  { name: 'TCS', logo: 'TCS Consultancy Services' },
+  { name: 'NCC Limited', logo: 'NCC Limited' },
+  { name: 'HFCL Group', logo: 'HFCL Group' },
+  { name: 'Pace Digitek', logo: 'Pace Digitek' },
+  { name: 'Skipper Limited', logo: 'Skipper Limited' },
+  { name: 'Dilip Buildcon', logo: 'Dilip Buildcon Limited' },
 ];
 
 const Clients = () => {
@@ -22,19 +22,20 @@ const Clients = () => {
         </div>
 
         {/* Client Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center gap-3 p-6 rounded-xl hover:bg-secondary transition-colors"
+              className="group flex flex-col items-center justify-center gap-4 p-6 rounded-xl hover:bg-secondary transition-all hover:shadow-lg"
             >
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-muted to-secondary flex items-center justify-center group-hover:from-primary group-hover:to-navy-light transition-all shadow-brand-sm">
-                <span className="font-heading font-bold text-2xl text-muted-foreground group-hover:text-primary-foreground transition-colors">
-                  {client.initials}
+              {/* Logo placeholder - Replace with actual images */}
+              <div className="w-28 h-28 rounded-lg bg-gradient-to-br from-muted to-secondary flex items-center justify-center group-hover:from-primary group-hover:to-navy-light transition-all shadow-brand-sm group-hover:shadow-lg transform group-hover:scale-105">
+                <span className="font-heading font-bold text-lg text-center text-muted-foreground group-hover:text-primary-foreground transition-colors px-2">
+                  {client.name}
                 </span>
               </div>
-              <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
-                {client.name}
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors text-center">
+                {client.logo}
               </span>
             </div>
           ))}

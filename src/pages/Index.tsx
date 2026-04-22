@@ -3,7 +3,6 @@ import Hero from '@/components/Hero';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import OurApproach from '@/components/OurApproach';
 import ProjectGlimpse from '@/components/ProjectGlimpse';
-import QualityPolicy from '@/components/QualityPolicy';
 import Statistics from '@/components/Statistics';
 import Founder from '@/components/Founder';
 import Clients from '@/components/Clients';
@@ -17,7 +16,6 @@ const Index = () => {
       <WhyChooseUs />
       <OurApproach />
       <ProjectGlimpse />
-      <QualityPolicy />
       <Statistics />
       <Founder />
       <Clients />
