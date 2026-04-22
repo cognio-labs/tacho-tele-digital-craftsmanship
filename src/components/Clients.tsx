@@ -31,28 +31,17 @@ const Clients = () => {
         </div>
 
         {/* Client Logos */}
-        <div className="relative overflow-hidden">
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-background to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-background to-transparent" />
-
-          <div className="marquee flex w-max gap-8">
+        <div className="overflow-hidden">
+          <div className="marquee flex w-max items-center gap-14 py-2">
             {items.map((client, index) => (
-              <div
-                key={`${client.name}-${index}`}
-                className="group flex w-[180px] flex-col items-center justify-center gap-4 rounded-xl border border-border/60 bg-card/60 p-5 shadow-brand-sm transition-all hover:bg-secondary hover:shadow-lg"
-              >
-                <div className="flex h-16 w-full items-center justify-center">
-                  <img
-                    src={client.src}
-                    alt={client.subtitle}
-                    className="max-h-16 w-full object-contain opacity-90 transition-opacity group-hover:opacity-100"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors text-center">
-                  {client.subtitle}
-                </span>
+              <div key={`${client.name}-${index}`} className="flex items-center justify-center px-2">
+                <img
+                  src={client.src}
+                  alt={client.subtitle}
+                  className="h-14 w-auto max-w-[200px] object-contain"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             ))}
           </div>
