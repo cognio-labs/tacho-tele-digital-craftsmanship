@@ -113,6 +113,33 @@
   }
 }
 
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .marquee {
+    animation: marquee 28s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee {
+      animation: none;
+      transform: none;
+    }
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
