@@ -5,7 +5,6 @@ import SolarSection from '@/components/SolarSection';
 import OurApproach from '@/components/OurApproach';
 import ProjectGlimpse from '@/components/ProjectGlimpse';
 import Statistics from '@/components/Statistics';
-import Founder from '@/components/Founder';
 import Clients from '@/components/Clients';
 import Footer from '@/components/Footer';
 
@@ -19,7 +18,6 @@ const Index = () => {
       <OurApproach />
       <ProjectGlimpse />
       <Statistics />
-      <Founder />
       <Clients />
       <Footer />
     </div>
