@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import WhyChooseUs from '@/components/WhyChooseUs';
+import SolarSection from '@/components/SolarSection.tsx';
 import OurApproach from '@/components/OurApproach';
 import ProjectGlimpse from '@/components/ProjectGlimpse';
 import Statistics from '@/components/Statistics';
@@ -14,6 +15,7 @@ const Index = () => {
       <Header />
       <Hero />
       <WhyChooseUs />
+      <SolarSection />
       <OurApproach />
       <ProjectGlimpse />
       <Statistics />
