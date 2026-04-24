@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md shadow-brand-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       {/* Top bar */}
       <div className="bg-primary">
         <div className="section-container py-2 flex justify-between items-center text-sm">
