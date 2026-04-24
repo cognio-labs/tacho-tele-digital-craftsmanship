@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-brand-sm">
       {/* Top bar */}
       <div className="bg-primary">
         <div className="section-container py-2 flex justify-between items-center text-sm">
@@ -39,7 +39,7 @@ const Header = () => {
           <a href="#home" className="flex items-center gap-3">
             <img src={logoNew} alt="Tacho Tele" className="h-12 md:h-14 w-auto object-contain" />
             <div className="flex items-center">
-              <span className="font-heading font-bold text-xl md:text-2xl text-white">Tacho</span>
+              <span className="font-heading font-bold text-xl md:text-2xl text-foreground">Tacho</span>
               <span className="font-heading font-bold text-xl md:text-2xl text-accent ml-1">Tele</span>
             </div>
           </a>
