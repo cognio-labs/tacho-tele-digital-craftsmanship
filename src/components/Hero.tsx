@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="section-container relative z-10">
+      <div className="section-container relative z-10 ml-0 mr-auto">
         <div className="max-w-3xl">
           <div className="animate-slide-up">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-semibold mb-6 border border-accent/30">
@@ -50,7 +50,7 @@ const Hero = () => {
               { value: '15', label: 'States Covered' },
               { value: '1000+', label: 'KMs Network' },
             ].map((stat, index) => (
-              <div key={index} className="text-center md:text-left">
+              <div key={index} className="text-left">
                 <div className="text-3xl md:text-4xl font-bold text-accent font-heading">{stat.value}</div>
                 <div className="text-sm text-primary-foreground/70">{stat.label}</div>
               </div>
