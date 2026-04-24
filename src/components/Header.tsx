@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,14 +36,8 @@ const Header = () => {
       <div className="section-container py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-navy-light rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">T</span>
-            </div>
-            <div>
-              <span className="font-heading font-bold text-xl text-foreground">Tacho</span>
-              <span className="font-heading font-bold text-xl text-accent">Tele</span>
-            </div>
+          <a href="#home" className="flex items-center">
+            <img src={logo} alt="Tacho Tele" className="h-12 w-auto object-contain" />
           </a>
 
           {/* Desktop Navigation */}
