@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Linkedin } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logoNew from '@/assets/logo-new.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,8 +30,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
           <div>
-            <div className="flex items-center mb-6">
-              <img src={logo} alt="Tacho Tele" className="h-24 w-auto object-contain" />
+            <div className="flex items-center gap-3 mb-6">
+              <img src={logoNew} alt="Tacho Tele" className="h-16 w-auto object-contain" />
+              <div className="flex items-center">
+                <span className="font-heading font-bold text-2xl text-white">Tacho</span>
+                <span className="font-heading font-bold text-2xl text-accent ml-1">Tele</span>
+              </div>
             </div>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">
               Leading telecommunications infrastructure provider, connecting communities 
