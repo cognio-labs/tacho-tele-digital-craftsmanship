@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Telecommunications infrastructure"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-medium/85 to-navy-light/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-navy-medium/50 to-navy-light/30" />
       </div>
 
       {/* Content */}
