@@ -93,8 +93,8 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                 <span className="text-primary-foreground/70">
-                  TF-09 Astoria Boulevard,<br />
-                  RDC Hindon Chowk, Ghaziabad 201002 U.P.
+                  3rd floor, B-11,<br />
+                  RDC Rajnagar, Ghaziabad 201002 U.P.
                 </span>
               </li>
               <li className="flex items-center gap-3">
