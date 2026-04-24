@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Linkedin } from 'lucide-react';
-import logoNew from '@/assets/logo-new.png';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,7 +31,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src={logoNew} alt="Tacho Tele" className="h-16 w-auto object-contain" />
+              <img src={logo} alt="Tacho Tele" className="h-16 w-auto object-contain" />
               <div className="flex items-center">
                 <span className="font-heading font-bold text-2xl text-white">Tacho</span>
                 <span className="font-heading font-bold text-2xl text-accent ml-1">Tele</span>

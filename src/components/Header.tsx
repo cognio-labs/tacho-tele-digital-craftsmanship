@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoNew from '@/assets/logo-new.png';
+import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +37,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3">
-            <img src={logoNew} alt="Tacho Tele" className="h-12 md:h-14 w-auto object-contain" />
+            <img src={logo} alt="Tacho Tele" className="h-12 md:h-14 w-auto object-contain" />
             <div className="flex items-center">
               <span className="font-heading font-bold text-xl md:text-2xl text-foreground">Tacho</span>
               <span className="font-heading font-bold text-xl md:text-2xl text-accent ml-1">Tele</span>
